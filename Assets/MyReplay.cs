@@ -21,7 +21,6 @@ public class MyReplay : MonoBehaviour {
 			Record ();
 		}
 		else {
-			Debug.Log("te");
 			PlayBack();
 		}
 
@@ -33,7 +32,7 @@ public class MyReplay : MonoBehaviour {
 		rigidBody.isKinematic  =true;
 		int frame = Time.frameCount % bufferFrames;
 
-		print("Reading frame - " + frame);
+//		print("Reading frame - " + frame);
 		transform.position = keyFrames[frame].position;
 		transform.rotation = keyFrames[frame].rotation;
 
@@ -47,7 +46,7 @@ public class MyReplay : MonoBehaviour {
 		int frame = Time.frameCount % bufferFrames;
 		float time = Time.time;
 
-		print("Writing Frame -" + frame);
+//		print("Writing Frame -" + frame);
 		keyFrames [frame] = new MyKeyFrame (time, transform.position, transform.rotation);
 	}
 }

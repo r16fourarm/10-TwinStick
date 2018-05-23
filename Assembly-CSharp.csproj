@@ -51,9 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\Camera\CameraPan.cs" />
+     <Compile Include="Assets\Game\GameManager.cs" />
      <Compile Include="Assets\MyReplay.cs" />
      <Compile Include="Assets\Player\Player.cs" />
+     <Compile Include="Assets\PlayerPrefsManager.cs" />
+     <Compile Include="Assets\SelfieStick.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>G:/unity5 gamedir/TwinStick/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
